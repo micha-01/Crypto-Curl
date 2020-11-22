@@ -2,6 +2,8 @@
 
 Crypto-Curl is a shellscript that displays cryptocurrency values (e. g. Bitcoin or Monero) on your polybar and saves a local history to check wheter the average value has risen or fallen.
 
+![Screenshot](/screenshots/screen.png)
+
 It is based on **ticker-crypto** (https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/ticker-crypto)
 
 ## Dependencies
