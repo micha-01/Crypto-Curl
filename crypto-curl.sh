@@ -29,8 +29,8 @@ else
     IFS=','
     LAST=( $LAST_LINE )
     LAST_AVG=${LAST[3]}
-    SUM=$(echo "${LAST[3]} * $NUMBER + $quote" | bc)
-    AVG=$(echo "$SUM / ($NUMBER + 1)" | bc)
+    SUM=$(echo "${LAST[3]} * $NUMBER + $quote" | bc -l)
+    AVG=$(echo "$SUM / ($NUMBER + 1)" | bc -l)
     echo "$CURRENCY,$quote,$DATE,$AVG" >> $FILE
     if (( $(echo "$AVG > $LAST_AVG" | bc -l) )); then
         echo "%{F#1dd05d}%{F-} $quote€"
