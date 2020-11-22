@@ -12,7 +12,8 @@ It is based on **ticker-crypto** (https://github.com/polybar/polybar-scripts/tre
 - `jq`
 - `bc`
 - `polybar`
-- `Font Awesome Brands (Free)`
+- `Material Icons` (Graphs)
+- `Font Awesome Brands (Free)` (Currency Icons)
 
 ## Polybare Module Implementation
 
