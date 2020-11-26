@@ -14,8 +14,8 @@ else
     echo "Something went wrong "
     exit 1
 fi
-
-quote=$(curl -sf $API?pair=${CURRENCY}EUR | jq -r ".result.XX${second}EUR.c[0]")
+agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36/8mqQhSuL-09" 
+quote=$(curl -A $agent -sf $API?pair=${CURRENCY}EUR | jq -r ".result.XX${second}EUR.c[0]")
 quote=$(LANG=C printf "%.2f" "$quote")
 
 DATE=$(date)
